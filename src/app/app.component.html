@@ -1,7 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <span>
+    <!-- <img src="assets/img/angular_whiteTransparent.svg" class="angular-logo"> -->
+    Mark Jeo
+  </span>
+  <span class="fill-remaining-space"></span>
+  <button mat-button routerLink="login">Login</button>
+  <button mat-button (click)="onLogout()">Logout</button>
+</mat-toolbar>
 <h1>{{title}}</h1>
-<nav>
-  <a routerLink="/login">Login</a>
-</nav>
+
 <router-outlet></router-outlet>
 
