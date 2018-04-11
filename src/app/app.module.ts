@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -15,7 +17,10 @@ import { ThemeModule } from "./config/theme.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ThemeModule
+    ThemeModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
