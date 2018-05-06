@@ -8,11 +8,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './config/app-routing.module';
 import { ThemeModule } from "./config/theme.module";
+import { LoginLayoutComponent } from './shared/layout/login-layout/login-layout.component';
+import { HomeLayoutComponent } from './shared/layout/home-layout/home-layout.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    LoginLayoutComponent,
+    HomeLayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
